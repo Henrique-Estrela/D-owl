@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+
+
+:root{
+    --branco: #fff;
+    --preto: #000;
+    --vermelho-claro: #b9030f;
+    --vermelho-medio: #9e0004;
+    --vermelho-forte: #70160e;
+    --preto-c : #161917;
+    --branco-d : #e1e3db;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*::selection {
+    color: var(--branco-d);
+    background-color: var(--vermelho-forte);
+}
+
+
+body{
+    background-color: var(--preto-c) ;
+}
+
+.navbar{
+    font-family: 'Patrick Hand', cursive;
+    width: 100%;
+    height: 13vh;
+    background-color: rgba(255, 255, 255)  ;
+}
+
+a , li , ul{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--vermelho-forte);
+}
+
+.nav-logo{
+    font-size: 3rem;
+    margin-left: 1.5vw;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.navbar-end{
+    position: absolute;
+    display: flex;
+    right: 10vw;
+    font-size: 1.5rem;
+    margin: 4rem;
+}
+
+.title{
+    font-size: 3rem;
+    color: var(--branco-d);
+    margin-top: 6rem;
+    position: relative;
+}
+.title:hover{
+    color: var(--vermelho-medio);
+    transition: all 0.5s;
+}
+.linha{
+    border-radius: 3px;
+    width: 8rem;
+    height: 0.2rem;
+    background-color: var(--vermelho-claro);
+}
+
+#main{
+    width: calc(96vw - 13rem);
+}
+
+.caixa{
+    background-color: rgba(0, 0, 0, 0.233);
+    margin-top: 4rem;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 2rem;
+}
+
+#link{
+    width: 40vw;
+    height: 2.5rem;
+    padding: 15px;
+    border-radius: 10px;
+    color: var(--vermelho-claro);
+    background-color: var(--branco-d);
+    font-size: 2rem;
+    margin-top: 6.5rem;
+    margin-bottom: 4rem;
+}
+.text{
+    position: absolute;
+    margin-top: 2.5rem;
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: var(--branco-d);
+}
+
+.btn{
+    width: 20vw;
+    height: 10vh;
+    border-radius: 20px;
+    color: var(--branco);
+    background-color: var(--vermelho-forte);
+    border: none;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#propaganda{
+    
+    display: flex;
+    right: 2vw;
+    top: 20vh;
+    position: fixed;
+    z-index: 100000000;
+    background-color: var(--branco);
+    width: 13rem;
+    height: 35rem;
+}
