@@ -27,6 +27,15 @@ body{
     background-color: var(--preto-c) ;
 }
 
+body::-webkit-scrollbar-thumb{
+    background-color: var(--vermelho-forte);
+    background: #fff;
+}
+body::-webkit-scrollbar{
+    color: var(--vermelho-forte);
+    width: 1rem;
+}
+
 .navbar{
     font-family: 'Patrick Hand', cursive;
     width: 100%;
@@ -92,7 +101,6 @@ a , li , ul{
 
 #main{
     width: calc(96vw - 13rem);
-    display: none;
 }
 #download{
     width: calc(96vw - 13rem);
