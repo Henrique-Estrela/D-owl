@@ -49,6 +49,8 @@
             </ul>
         </div>
     </nav>
+
+
     <main id="main">
             <div class="centralize-lado">
                 <ul class="t-4">
@@ -61,38 +63,63 @@
                     </li>
                 </ul>
             </div>
+            
+                <section id="linkyt" class="centralize-lado">
+                    
+                        <div class="caixa centralize-lado">
+                            <form method="GET" action="">
+                                <ul class="">
+                                    <label class="text" >Insira o seu link do YouTube:</label>
+                                    <li class="centralize-lado">
+                                        <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
+                                    </li>
+                                    <li class="centralize-lado">
+                                        <input type="button" class="btn" value="Converter">
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    
+                    
+                </section>
 
-            <section class="centralize-lado">
-
-                <div class="caixa centralize-lado">
-                    <form method="GET" action="https://convert2mp3s.com/api/button/{mp3}?url={https://www.youtube.com/watch?v=3wd3j9-piek}">
-                        <ul class="">
-                            <label class="text" >Insira o seu link do YouTube:</label>
-                            <li class="centralize-lado">
-                                <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
-                            </li>
-                            <li class="centralize-lado">
-                                <input type="submit" class="btn" value="Converter">
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-                
-                
-            </section>
+                <section>
+                    <div id="type">
+                        <div class="centralize-total">
+                            <form method="GET" action="">
+                                <ul class="flex">
+                                    <li>
+                                        <button onclick="" type="submit" class="btn-3">MP3</button>
+                                    </li>
+                                    <li>
+                                        <button onclick="" type="submit" class="btn-4">MP4</button>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                </section>
+            </form>
     </main>
-    <div>
 
-        
-        <section id="download" class="centralize-total t-5">
-            <iframe id="buttonApi " src="https://convert2mp3s.com/api/button/mp4?url=https://www.youtube.com/watch?v=3wd3j9-piek"
-            width="10%" height="10%"  allowtransparency="true" scrolling="no" style="border:none; background-color: #000; border: #ff2f1c solid 5px;  height: 20vh; border-radius: 3rem;  width: 60vw;background-color: rgb(255, 255, 255) !important;"></iframe>
-        </section>
-        <section id="download" class="centralize-total t-5">
-            <iframe id="buttonApi " src="https://convert2mp3s.com/api/button/mp3?url=https://www.youtube.com/watch?v=3wd3j9-piek"
-            width="10%" height="10%"  allowtransparency="true" scrolling="no" style="border:none; background-color: #000; border: #ff2f1c solid 5px;  height: 20vh; border-radius: 3rem;  width: 60vw;background-color: rgb(255, 255, 255) !important;"></iframe>
-        </section>
 
+
+    <div id="download">
+        <?php
+
+
+            $YT = $_GET["link"];
+
+            $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$YT."&format=xml");
+            echo '<div class="centralize-lado t-4"><img class="img-yt" src="'.$saida->thumbnail_url.'"alt=""></div>';
+            echo '<div class="centralize-lado t--1 p-3 tcenter"><ul class="t-4"><li><span class="title" onmousemove="linha(2)" onmouseout="linha(1)">'.$saida->title.'</span></li></ul></div>';
+
+            
+
+            include "_script/mp3.php";
+            include "_script/mp4.php";
+
+        ?>
     </div>
 
 
