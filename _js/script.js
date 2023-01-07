@@ -24,7 +24,13 @@ function linha(num) {
 function encaminhar(num2) {
     switch (num2) {
         case 1:
-            window.location.href=""
+            
+            break;
+        case 2:
+
+            break;
+        case 3:
+
             break;
     
         default:
