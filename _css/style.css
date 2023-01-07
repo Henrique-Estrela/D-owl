@@ -106,13 +106,11 @@ a , li , ul{
 }
 #download{
     width: calc(96vw - 13rem);
-    display: none;
+    display: "";
 }
-#type{
-    display: block !important;
-}
+
 #linkyt{
-    display: none;
+    display: "";
 }
 
 .caixa{
@@ -121,7 +119,7 @@ a , li , ul{
     width: 50vw;
     height: 50vh;
     border-radius: 2rem;
-    display: none;
+    display: "";
 }
 
 #link{

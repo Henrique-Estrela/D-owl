@@ -74,7 +74,7 @@
                                         <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
                                     </li>
                                     <li class="centralize-lado">
-                                        <input type="button" class="btn" value="Converter">
+                                        <input type="submit" class="btn" value="Converter">
                                     </li>
                                 </ul>
                             </form>
@@ -86,16 +86,14 @@
                 <section>
                     <div id="type">
                         <div class="centralize-total">
-                            <form method="GET" action="">
                                 <ul class="flex">
                                     <li>
-                                        <button onclick="" type="submit" class="btn-3">MP3</button>
+                                        <button onclick="escolha(1)"  class="btn-3">MP3</button>
                                     </li>
                                     <li>
-                                        <button onclick="" type="submit" class="btn-4">MP4</button>
+                                        <button onclick="escolha(2)"  class="btn-4">MP4</button>
                                     </li>
                                 </ul>
-                            </form>
                         </div>
                     </div>
                 </section>

@@ -1,30 +1,20 @@
 function linha(num) {
     document.querySelector(".linha").style.transition = "all 0.5s";
 
-
-
-    switch (num) {
-        case 1:
-            document.querySelector(".linha").style.width = "8rem";
-
-            break
-        case 2:
-            document.querySelector(".linha").style.width = "25rem";
-            break;
-    
-        
-        
-        
-        default:
-            break;
+    if (num == 1){
+        document.querySelector(".linha").style.width = "8rem";
+    }else{
+        document.querySelector(".linha").style.width = "25rem";
     }
+   
     
 }
 
-function encaminhar(num2) {
+function escolha(num2) {
+    
     switch (num2) {
         case 1:
-            
+
             break;
         case 2:
 
