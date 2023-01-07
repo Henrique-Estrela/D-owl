@@ -92,6 +92,10 @@ a , li , ul{
 
 #main{
     width: calc(96vw - 13rem);
+    display: none;
+}
+#download{
+    width: calc(96vw - 13rem);
 }
 
 .caixa{
@@ -158,3 +162,5 @@ a , li , ul{
     width: 13rem;
     height: 35rem;
 }
+
+
