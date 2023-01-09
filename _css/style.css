@@ -25,6 +25,7 @@
 
 body{
     background-color: var(--preto-c) ;
+    
 }
 
 body::-webkit-scrollbar {
@@ -73,6 +74,10 @@ a , li , ul{
     color: var(--branco-d);
     margin-top: 1rem;
 }
+.titlec{
+    padding-left:3rem ;
+    padding-right: 3rem;
+}
 .title:hover{
     color: var(--vermelho-medio);
     transition: all 0.5s;
@@ -85,7 +90,7 @@ a , li , ul{
 }
 .nav-link::before {
     content: "";
-    background: #000;
+    background: #70160e;
     width: 50%;
     height: 0.05rem;
     position: absolute;
@@ -95,10 +100,11 @@ a , li , ul{
     transform-origin: bottom right;
     transition: transform 500ms;
   }
-  .nav-link:hover::before {
+
+.nav-link:hover::before {
     transform: scaleX(1);
     transform-origin: bottom left;
-  }
+}
 
 #main{
     width: calc(96vw - 13rem);
@@ -106,16 +112,18 @@ a , li , ul{
 }
 #download{
     width: calc(96vw - 13rem);
+    
 }
-#linkyt{
-    display: "";
+.mp3, .mp4{
+    display: none;
 }
+
 
 .caixa{
     background-color: rgba(0, 0, 0, 0.233);
-    margin-top: 6.5rem;
+    margin-top: 4.5rem;
     width: 50vw;
-    height: 50vh;
+    height: 55vh;
     border-radius: 2rem;
 }
 #link{
@@ -126,8 +134,7 @@ a , li , ul{
     color: var(--vermelho-claro);
     background-color: var(--branco-d);
     font-size: 2rem;
-    margin-top: 6.5rem;
-    margin-bottom: 4rem;
+    margin-top: 7.5rem;
 }
 .text{
     position: absolute;
@@ -138,6 +145,7 @@ a , li , ul{
 }
 
 .btn{
+    margin-top: 4.5rem;
     width: 20vw;
     height: 10vh;
     border-radius: 20px;
@@ -199,8 +207,8 @@ a , li , ul{
 
 .img-yt{
     border-radius: 4rem;
-    width: 600px;
-    height: 45vh;
+    width: 30vw;
+    height: 15rem;
     object-fit: cover;
     object-position: center;
 }

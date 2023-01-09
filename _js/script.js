@@ -10,33 +10,19 @@ function linha(num) {
     
 }
 
-function empty(n){
-	return !(!!n ? typeof n === 'object' ? Array.isArray(n) ? !!n.length : !!Object.keys(n).length : true : false);
-}
 
-document.addEventListener('DOMContentLoaded', function() {
-    document.querySelector('.btn').addEventListener('click', function() {
-        if (empty(document.querySelector('#linkyt'))) {
-            document.querySelector('#linkyt').style.display ="none";
-            console.log('vazia')
-        } else {
-            document.querySelector('#linkyt').style.display ="none";
-            console.log('deboa')
-
-        }
-    })
-  });
 
 function escolha(num2) {
-    
+    document.querySelector('.nome').style.display = "none";
+
     switch (num2) {
         case 1:
-            document.querySelector('.mp4').style.display ="";
-            document.querySelector('#type').style.display = "";
+            document.querySelector('.mp3').style.display ="block";
+            document.querySelector('#type').style.display = "none";
             break;
         case 2:
-            document.querySelector('.mp3').style.display ="";
-            document.querySelector('#type').style.display = "";
+            document.querySelector('.mp4').style.display ="block ";
+            document.querySelector('#type').style.display = "none";
             break;        
         default:
             break;

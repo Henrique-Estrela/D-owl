@@ -27,13 +27,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
 
     <nav class="navbar flex centralize-cima">
         <div class="flex" >
-          <a class="flex centralize-cima" href="#">
+          <a class="flex centralize-cima" href="index.php">
             <img src="_imgs/icon1.png" alt="Logo" width="80" class="centralize-cima l-1">
             <div class="nav-logo nav-link">D&owl</div>
           </a>
@@ -42,20 +44,18 @@
             <ul class="row">
                 <li class="flex"> 
                   <a href="index.php" class="nav-link l-3">Home </a>
-                  <a href=""  class="nav-link l-3">Outros</a>
-
+                  <a href="" class="nav-link  l-3">Outros</a>
                 </li>
-              
             </ul>
         </div>
     </nav>
 
 
     <main id="main">
-            <div class="centralize-lado">
+            <div class=" nome centralize-lado">
                 <ul class="t-4">
                     <li>
-                        <span class="title" onmousemove="linha(2)" onmouseout="linha(1)">CONVERSOR YOUTUBE</span>
+                        <span class="title" onmousemove="linha(2)" onmouseout="linha(1)">CONVERTER PARA</span>
                     </li>
                     <li class="centralize-lado">
                         <div class="linha"></div>
@@ -63,30 +63,52 @@
                     </li>
                 </ul>
             </div>
-            
-            <section id="linkyt" class="centralize-lado">
-                
-                    <div class="caixa centralize-lado">
-                        <form method="GET" action="converter.php">
-                            <ul class="">
-                                <label class="text" >Insira o seu link do YouTube:</label>
-                                <li class="centralize-lado">
-                                    <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
+
+            <section>
+                <div id="type">
+                    <div class="centralize-total">
+                            <ul class="flex">
+                                <li>
+                                    <button onclick="escolha(1)" class="btn-3">MP3</button>
                                 </li>
-                                <li class="centralize-lado">
-                                    <input type="submit"  class="btn" value="Converter">
+                                <li>
+                                    <button onclick="escolha(2)" class="btn-4">MP4</button>
                                 </li>
                             </ul>
-                        </form>
                     </div>
-                
-                
+                </div>
             </section>
-
-        
     </main>
 
- <?php include '_script/propaganda.php' ?>
+
+
+    <div id="download">
+        <?php
+
+
+             
+            if(!empty($_GET["link"])){
+                $YT = $_GET["link"];
+                ?>
+                <?php
+                $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$YT."&format=xml");
+                
+                include "_script/mp3.php";
+                include "_script/mp4.php";
+            }
+            
+            
+        ?>
+    </div>
+
+
+  
+    
+<script>iFrameResize({ log: false, minHeight: 360 }, '#buttonApi')</script>
+
+<?php include '_script/propaganda.php' ?>
+
+ 
     
 </body>
 </html>
