@@ -106,9 +106,7 @@ a , li , ul{
 }
 #download{
     width: calc(96vw - 13rem);
-    display: "";
 }
-
 #linkyt{
     display: "";
 }
@@ -119,9 +117,7 @@ a , li , ul{
     width: 50vw;
     height: 50vh;
     border-radius: 2rem;
-    display: "";
 }
-
 #link{
     width: 40vw;
     height: 2.5rem;

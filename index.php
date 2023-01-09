@@ -64,40 +64,39 @@
                 </ul>
             </div>
             
-                <section id="linkyt" class="centralize-lado">
-                    
-                        <div class="caixa centralize-lado">
-                            <form method="GET" action="">
-                                <ul class="">
-                                    <label class="text" >Insira o seu link do YouTube:</label>
-                                    <li class="centralize-lado">
-                                        <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
-                                    </li>
-                                    <li class="centralize-lado">
-                                        <input type="submit" class="btn" value="Converter">
-                                    </li>
-                                </ul>
-                            </form>
-                        </div>
-                    
-                    
-                </section>
-
-                <section>
-                    <div id="type">
-                        <div class="centralize-total">
-                                <ul class="flex">
-                                    <li>
-                                        <button onclick="escolha(1)"  class="btn-3">MP3</button>
-                                    </li>
-                                    <li>
-                                        <button onclick="escolha(2)"  class="btn-4">MP4</button>
-                                    </li>
-                                </ul>
-                        </div>
+            <section id="linkyt" class="centralize-lado">
+                
+                    <div class="caixa centralize-lado">
+                        <form method="GET" action="">
+                            <ul class="">
+                                <label class="text" >Insira o seu link do YouTube:</label>
+                                <li class="centralize-lado">
+                                    <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
+                                </li>
+                                <li class="centralize-lado">
+                                    <input type="submit"  class="btn" value="Converter">
+                                </li>
+                            </ul>
+                        </form>
                     </div>
-                </section>
-            </form>
+                
+                
+            </section>
+
+            <section>
+                <div id="type">
+                    <div class="centralize-total">
+                            <ul class="flex">
+                                <li>
+                                    <button onclick="escolha(1)"  class="btn-3">MP3</button>
+                                </li>
+                                <li>
+                                    <button onclick="escolha(2)"  class="btn-4">MP4</button>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+            </section>
     </main>
 
 
@@ -106,17 +105,21 @@
         <?php
 
 
-            $YT = $_GET["link"];
+             
+            if(!empty($_GET["link"])){
+                $YT = $_GET["link"];
 
-            $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$YT."&format=xml");
-            echo '<div class="centralize-lado t-4"><img class="img-yt" src="'.$saida->thumbnail_url.'"alt=""></div>';
-            echo '<div class="centralize-lado t--1 p-3 tcenter"><ul class="t-4"><li><span class="title" onmousemove="linha(2)" onmouseout="linha(1)">'.$saida->title.'</span></li></ul></div>';
+                $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$YT."&format=xml");
+                echo '<div class="centralize-lado t-4"><img class="img-yt" src="'.$saida->thumbnail_url.'"alt=""></div>';
+                echo '<div class="centralize-lado t--1 p-3 tcenter"><ul class="t-4"><li><span class="title" onmousemove="linha(2)" onmouseout="linha(1)">'.$saida->title.'</span></li></ul></div>';
 
+
+                include "_script/mp3.php";
+                include "_script/mp4.php";
+
+            }
             
-
-            include "_script/mp3.php";
-            include "_script/mp4.php";
-
+            
         ?>
     </div>
 
