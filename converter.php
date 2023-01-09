@@ -26,9 +26,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -69,10 +69,11 @@
                     <div class="centralize-total">
                             <ul class="flex">
                                 <li>
-                                    <button onclick="escolha(1)" class="btn-3">MP3</button>
+                                    <button onclick="escolha(1)" onmousemove="teste(1)" onmouseout="teste(3)" class="raise btnn"> <i class="icon imp3 material-symbols-outlined">headphones</i> <br> <span class="label_type">MP3</span> </button>
                                 </li>
+
                                 <li>
-                                    <button onclick="escolha(2)" class="btn-4">MP4</button>
+                                    <button onclick="escolha(2)" onmousemove="teste(2)" onmouseout="teste(3)" class="raise btnn "><i class="icon imp4 material-symbols-outlined">Movie</i> <br> <span class="label_type">MP4</span></button>
                                 </li>
                             </ul>
                     </div>

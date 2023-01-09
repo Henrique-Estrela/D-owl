@@ -30,3 +30,18 @@ function escolha(num2) {
 }
 
 
+function teste(num) {
+    var mp3 =  document.querySelector('.imp3')
+    var mp4 =  document.querySelector('.imp4')
+
+
+     if (num == 1) {
+         mp3.classList.add('hover');
+     } else if (num == 2) {
+         mp4.classList.add('hover');
+     }
+     else{
+     mp3.classList.remove('hover');
+     mp4.classList.remove('hover');
+     }
+ }
