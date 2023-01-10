@@ -12,6 +12,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/func.css">
+    <link rel="stylesheet" href="_css/responsive.css">
+
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,11 +71,11 @@
                     <div class="centralize-total">
                             <ul class="flex">
                                 <li>
-                                    <button onclick="escolha(1)" onmousemove="teste(1)" onmouseout="teste(3)" class="raise btnn"> <i class="icon imp3 material-symbols-outlined">headphones</i> <br> <span class="label_type">MP3</span> </button>
+                                    <button onclick="escolha(1)" onmousemove="hover(1)" onmouseout="hover(3)" class="raise btnn"> <i class="icon imp3 material-symbols-outlined">headphones</i> <br> <span class="label_type">MP3</span> </button>
                                 </li>
 
                                 <li>
-                                    <button onclick="escolha(2)" onmousemove="teste(2)" onmouseout="teste(3)" class="raise btnn "><i class="icon imp4 material-symbols-outlined">Movie</i> <br> <span class="label_type">MP4</span></button>
+                                    <button onclick="escolha(2)" onmousemove="hover(2)" onmouseout="hover(3)" class="raise btnn "><i class="icon imp4 material-symbols-outlined">Movie</i> <br> <span class="label_type">MP4</span></button>
                                 </li>
                             </ul>
                     </div>

@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="_css/style.css">
     <link rel="stylesheet" href="_css/func.css">
+    <link rel="stylesheet" href="_css/responsive.css">
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,14 +48,40 @@
                 </li>
               
             </ul>
+
         </div>
+      
+        <div class="container-card">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu" class="menu-card" id="btn" onclick="teste()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div> 
+    </nav>
+    <nav class="navbar-p" >
+
+        <div class="nav">
+            <ul class="col f2">
+                <li class="link-p"> 
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="link-p">
+                    <a href=""  class="nav-link ">Outros</a>
+
+                </li>
+            </ul>
+        </div>
+
     </nav>
 
 
     <main id="main">
             <div class="centralize-lado">
                 <ul class="t-4">
-                    <li>
+                    <li class="centralize-lado">
                         <span class="title" onmousemove="linha(2)" onmouseout="linha(1)">CONVERSOR YOUTUBE</span>
                     </li>
                     <li class="centralize-lado">
@@ -69,7 +96,7 @@
                     <div class="caixa centralize-lado">
                         <form method="GET" action="converter.php">
                             <ul class="">
-                                <label class="text" >Insira o seu link do YouTube:</label>
+                                <span class="text" >Insira o seu link do YouTube:</span>
                                 <li class="centralize-lado">
                                     <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
                                 </li>
