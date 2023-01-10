@@ -26,6 +26,8 @@
 body{
     background-color: var(--preto-c) ;
     margin-top: 15vh;
+    overflow-x: hidden;
+
 }
 
 body::-webkit-scrollbar {
@@ -115,6 +117,7 @@ label{
 
      .navbar-p{
         margin-top: -1rem;
+        display: none;
         z-index: 101;
         position: absolute;
         background-color: var(--branco);
@@ -210,12 +213,10 @@ a , li , ul{
     color: var(--vermelho-claro);
     background-color: var(--branco-d);
     font-size: 2rem;
-    margin-top: 7.5rem;
+    margin-top: 0.5rem;
 }
 .text{
-    position: absolute;
-    margin-top: 2.5rem;
-    margin-left: 1rem;
+    padding: 1rem;
     font-size: 2rem;
     color: var(--branco-d);
 }

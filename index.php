@@ -95,8 +95,8 @@
                 
                     <div class="caixa centralize-lado">
                         <form method="GET" action="converter.php">
-                            <ul class="">
-                                <span class="text" >Insira o seu link do YouTube:</span>
+                            <ul class="text-c">
+                                <span class="centralize-lado text t-1" >Insira o seu link do YouTube:</span>
                                 <li class="centralize-lado">
                                     <input placeholder="https://www.youtube.com/Exemplo" type="url" name="link" id="link" required> 
                                 </li>

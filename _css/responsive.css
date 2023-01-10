@@ -5,6 +5,9 @@
     .container-card{
         pointer-events: painted;
     }
+    .navbar-p{
+        display: block;
+    }
 
     .navbar-end{
         display: none;
@@ -15,8 +18,25 @@
     }
 
    #propaganda a{
-    display: none;
     position: absolute;
+    width: 95vw;
+    height: 6rem;
+    top: 115vh;
+    }
+    .caixa{
+        width: 80vw ;
+        margin-bottom: 2rem;
+    }
+    .text{
+        font-size: 1.5rem;
+    }
+    #link{
+        width: 65vw;
+        font-size: 1.2rem;
+    }
+    .btn{
+        width: 45vw;
+    
     }
 }
 
