@@ -37,7 +37,7 @@
 
     <nav class="navbar flex centralize-cima">
         <div class="flex" >
-          <a class="flex centralize-cima" href="index.php">
+          <a class="flex centralize-cima" href="#">
             <img src="_imgs/icon1.png" alt="Logo" width="80" class="centralize-cima l-1">
             <div class="nav-logo nav-link">D&owl</div>
           </a>
@@ -46,10 +46,38 @@
             <ul class="row">
                 <li class="flex"> 
                   <a href="index.php" class="nav-link l-3">Home </a>
-                  <a href="" class="nav-link  l-3">Outros</a>
+                  <a href=""  class="nav-link l-3">Outros</a>
+
+                </li>
+              
+            </ul>
+
+        </div>
+      
+        <div class="container-card">
+            <input type="checkbox" id="checkbox-menu">
+
+            <label for="checkbox-menu" class="menu-card" id="btn" onclick="teste()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div> 
+    </nav>
+    <nav class="navbar-p" >
+
+        <div class="nav">
+            <ul class="col f2">
+                <li class="link-p"> 
+                    <a href="index.php" class="nav-link">Home</a>
+                </li>
+                <li class="link-p">
+                    <a href=""  class="nav-link ">Outros</a>
+
                 </li>
             </ul>
         </div>
+
     </nav>
 
 
@@ -69,7 +97,7 @@
             <section>
                 <div id="type">
                     <div class="centralize-total">
-                            <ul class="flex">
+                            <ul class=" col flex">
                                 <li>
                                     <button onclick="escolha(1)" onmousemove="hover(1)" onmouseout="hover(3)" class="raise btnn"> <i class="icon imp3 material-symbols-outlined">headphones</i> <br> <span class="label_type">MP3</span> </button>
                                 </li>

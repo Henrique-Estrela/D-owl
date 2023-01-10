@@ -38,6 +38,15 @@
         width: 45vw;
     
     }
+    .btnn{
+        width: 30vh;
+    }
+    #type{
+        display: block;
+        position: absolute;
+        flex-direction: column;
+    }
+
 }
 
 @media only screen and (max-width: 400px) {

@@ -329,7 +329,6 @@ a , li , ul{
    
   
     .hover{
-        
         font-size: 8.5rem !important;
         -webkit-transform: scale(.5);
         -webkit-animation: efeitoHover 1s linear infinite alternate;
