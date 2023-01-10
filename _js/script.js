@@ -2,9 +2,9 @@ function linha(num) {
     document.querySelector(".linha").style.transition = "all 0.5s";
 
     if (num == 1){
-        document.querySelector(".linha").style.width = "8rem";
+        document.querySelector(".linha").style.width = "10vw";
     }else{
-        document.querySelector(".linha").style.width = "25rem";
+        document.querySelector(".linha").style.width = "30vw";
     }
    
     

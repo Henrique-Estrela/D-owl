@@ -119,7 +119,7 @@ label{
         margin-top: -1rem;
         display: none;
         z-index: 101;
-        position: absolute;
+        position: fixed;
         background-color: var(--branco);
         width: 100%;
         top: -10rem;
@@ -188,6 +188,10 @@ a , li , ul{
     height: 0.2rem;
     background-color: var(--vermelho-claro);
 }
+.nome{
+    width: auto;
+    margin-top: -2rem;
+}
 
 
 #main, #download{
@@ -231,14 +235,34 @@ a , li , ul{
     border: none;
     font-size: 1.5rem;
 }
+.btn-2 {
+    position: absolute;
+    display: flex;
+    top: 3.5rem;
+    margin-left: 1rem;
+    width: 13vw !important;
+    cursor: pointer;
+}
+.bot{
+    bottom: 3rem !important;
+    top: auto;
+}
+.sair{
+    font-size: 3rem !important;
+}
+
+#type{
+    margin-right: -2rem;
+}
+
 
 .btnn{
-    width: 25vw ;
+    width: 32vw ;
     height: 25vh ;
     background-color: var(--vermelho-claro) ;
     border-radius: 2rem ;
     border: none ;
-    margin-right: 3rem ;
+    margin-right: 2rem ;
     margin-top: 9rem ;
 }
 
@@ -268,12 +292,14 @@ a , li , ul{
 
 
 .img-yt{
-    border-radius: 4rem;
-    width: 30vw;
+    border-radius: 2rem;
+    width: 28rem;
     height: 15rem;
     object-fit: cover;
     object-position: center;
 }
+
+
 
 .icon{
     font-size: 6rem !important;

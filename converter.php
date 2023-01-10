@@ -82,9 +82,9 @@
 
 
     <main id="main">
-            <div class=" nome centralize-lado">
+            <div class=" nome centralize-lado centralize-cima">
                 <ul class="t-4">
-                    <li>
+                    <li class="centralize-total">
                         <span class="title" onmousemove="linha(2)" onmouseout="linha(1)">CONVERTER PARA</span>
                     </li>
                     <li class="centralize-lado">
@@ -96,13 +96,12 @@
 
             <section>
                 <div id="type">
-                    <div class="centralize-total">
-                            <ul class=" col flex">
-                                <li>
+                    <div class="centralize-lado">
+                            <ul class="btn-type col flex">
+                                <li class="centralize-lado">
                                     <button onclick="escolha(1)" onmousemove="hover(1)" onmouseout="hover(3)" class="raise btnn"> <i class="icon imp3 material-symbols-outlined">headphones</i> <br> <span class="label_type">MP3</span> </button>
                                 </li>
-
-                                <li>
+                                <li class="centralize-lado">
                                     <button onclick="escolha(2)" onmousemove="hover(2)" onmouseout="hover(3)" class="raise btnn "><i class="icon imp4 material-symbols-outlined">Movie</i> <br> <span class="label_type">MP4</span></button>
                                 </li>
                             </ul>
@@ -114,6 +113,9 @@
 
 
     <div id="download">
+        <div>
+            <a href="javascript:history.back()" class="btn btn-2 bot centralize-total"><span class="sair material-symbols-outlined">west</span></a>
+        </div>
         <?php
 
 
@@ -124,6 +126,8 @@
                 <?php
                 $saida = simplexml_load_file("https://www.youtube.com/oembed?url=".$YT."&format=xml");
                 
+                
+
                 include "_script/mp3.php";
                 include "_script/mp4.php";
             }

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
     label span{
         display: block ;
     }
@@ -11,6 +11,9 @@
 
     .navbar-end{
         display: none;
+    }
+    .navbar{
+        height: 10vh;
     }
 
     #main, #download{
@@ -26,6 +29,8 @@
     .caixa{
         width: 80vw ;
         margin-bottom: 2rem;
+        height: 45vh;
+
     }
     .text{
         font-size: 1.5rem;
@@ -34,24 +39,46 @@
         width: 65vw;
         font-size: 1.2rem;
     }
+    
     .btn{
         width: 45vw;
     
     }
     .btnn{
-        width: 30vh;
+        width: 50vh;
+        margin-top: 5rem;
+        margin-right: 0;
     }
-    #type{
-        display: block;
-        position: absolute;
+
+    .btn-type{
         flex-direction: column;
+        display: flex;
+        justify-content: center; 
     }
+    .title{
+        font-size: 2rem;
+    }
+    .img-yt{
+        width: 20rem;
+        height: 10rem;
+    }
+    iframe {
+        height: 18.3rem !important;
+    }
+    .btn-2{
+        width: 3.5rem !important;
+        height: 3.5rem;
+    }
+    .sair{
+        font-size: 2rem !important;
+    }
+ 
 
 }
 
 @media only screen and (max-width: 400px) {
    .title{
-    font-size: 2rem;
+    font-size: 1rem;
    }
     
 }
