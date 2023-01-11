@@ -27,6 +27,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 
+    
 
 </head>
 
@@ -112,8 +113,12 @@
 
         
     </main>
+    
 
- <?php include '_script/propaganda.php' ?>
+<?php 
+    include '_script/propaganda.php' ;
+    include '_script/propaganda2.php';
+?>
     
 </body>
 </html>

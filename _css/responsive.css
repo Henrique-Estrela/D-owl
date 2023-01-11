@@ -20,11 +20,12 @@
         width: 100vw;
     }
 
-   #propaganda a{
-    position: absolute;
-    width: 95vw;
-    height: 6rem;
-    top: 115vh;
+   #propaganda {
+     display: none;
+    }
+    #propaganda2{
+        display:block;
+        margin: 8px !important;
     }
     .caixa{
         width: 80vw ;
@@ -45,7 +46,7 @@
     
     }
     .btnn{
-        width: 50vh;
+        width: 40vh;
         margin-top: 5rem;
         margin-right: 0;
     }
@@ -73,6 +74,9 @@
         font-size: 2rem !important;
     }
  
+    #type {
+        margin-right: 0;
+    }
 
 }
 

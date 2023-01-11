@@ -131,7 +131,7 @@ label{
         overflow: hidden;
      }
      .active{
-        top: 6rem ;
+        top: 5.5rem ;
      }
      .link-p{
         margin: 1rem;
@@ -275,20 +275,30 @@ a , li , ul{
 
 
 
-#propaganda a{
-    
+#propaganda {
     display: flex;
     right: 2vw;
     top: 20vh;
     position: fixed;
     z-index: 100;
     background-color: var(--branco);
-    background-image: url(https://static.mservice.io/blogscontents/momo-upload-api-221010113805-638009986852451949.jpg);
     background-size: 25rem;
     background-position-x: center;
     width: 13rem;
     height: 35rem;
 }
+#propaganda2{
+    display: none;
+    right: 2vw;
+    z-index: 100;
+    background-color: var(--branco);
+    background-size: 25rem;
+    background-position-x: center;
+    width: 95vw;
+    height: 6rem !important;
+    bottom: 0;
+}
+
 
 
 .img-yt{
