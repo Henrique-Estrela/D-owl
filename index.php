@@ -27,7 +27,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"></script>
 
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5484751916274808"
+     crossorigin="anonymous"></script>
 
 </head>
 

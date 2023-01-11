@@ -32,6 +32,9 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5484751916274808"
+     crossorigin="anonymous"></script>
+
 </head>
 
 <body>
